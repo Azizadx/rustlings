@@ -10,10 +10,24 @@
 // Write a function that calculates the price of an order of apples given
 // the quantity bought. No hints this time!
 
-// I AM NOT DONE
-
 // Put your function here!
-// fn calculate_price_of_apples {
+// the soluation will be simple easy 
+// calculate_price_of_apples is going to take param of quantity that data types of i:32 also the
+// function will return int type 
+// then I'll initial Variable name price also with type of i:32 
+// then if-else if- else  
+fn calculate_price_of_apples(quantity:i32) -> i32 {
+    //define my var
+    let mut price:i32 = 0 ;// :i32 is optional by defualt rust will assign to 32 bits
+    if quantity <= 40 {
+        price = quantity * 2;
+    }
+    else {
+       price = quantity; 
+
+    }
+    return price;
+}
 
 // Don't modify this function!
 #[test]
